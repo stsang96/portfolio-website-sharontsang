@@ -13,7 +13,7 @@ body {
 
 header {
   background-color: #ffffff;
-  text-align: center;
+  text-align: center
   padding: 10px 0;
   box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.15);
   position: fixed;
@@ -95,18 +95,6 @@ a:active { /* selected link */
     color: #F5B91D
 }
 
-selector {
-  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
-}
-
-selector {
-  position: relative;
-}
-
-selector {
-  width: 1200px;
-}
-
 .container {
   max-width: 1200px;
 }
@@ -153,10 +141,62 @@ selector {
   background-color: #ffffff;
 }
 
+#hero span {
+  display: block;
+}
+
 #hero h1 {
   margin: 0;
   padding: 0.67em 0;
 }
 #hero h1 {
   text-align: center; /* Centers text */
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+}
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+ }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }

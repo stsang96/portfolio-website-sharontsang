@@ -102,7 +102,7 @@ a:active { /* selected link */
 
 
 
-*/ Buttons */
+/* Buttons */
 
 
 
@@ -151,7 +151,52 @@ a:active { /* selected link */
 
 }
 
+
+
+
+
+/* Animation and Transition */
+
+
+
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #f76414;}
+  100% {fill: #f76414}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 15s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 25s cloud-move-reverse infinite alternate linear;
+}
+
+
+
+
+
 /* Layout styling */
+
+
+
+
 
 .container {
   padding: 0 15px;
@@ -223,32 +268,4 @@ X-large devices (1440px or larger)
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-}
-
-@keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #f76414;}
-  100% {fill: #f76414}
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
-}
-
-.cloud-front {
-  animation: 15s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
-}
-
-.cloud-back {
-  animation: 25s cloud-move-reverse infinite alternate linear;
 }

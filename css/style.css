@@ -5,23 +5,26 @@
 body {
   background-color: #ffffff;
   font-family: 'work-sans', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
 }
 
 header {
   background-color: #ffffff;
   text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.15);
   position: fixed;
   width: 100%;
 }
 
 main {
-  padding-top: 215px;
+  padding-top: 56px;
 }
 
 .logo {
@@ -30,16 +33,19 @@ main {
   text-align: center;
 }
 
-nav > ul {
+.icon {
+  width: 100%;
+  max-width: 50px;
+  text-align: center;
+}
+
+nav>ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-nav > ul > li {
-  display: inline-block;
-}
-
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -49,6 +55,7 @@ nav > ul > li > a {
 h1, h2, h3 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 2.5em;
   font-weight: 700;
@@ -70,16 +77,19 @@ img {
 
 a {
   color: #F5B91D;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
 
-a:visited { /* visited link */
+a:visited {
+  /* visited link */
   color: #F5B91D;
 }
 
 a:hover {
   color: #EFEFEF;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
 
 a:focus {
@@ -87,33 +97,30 @@ a:focus {
   text-decoration: underline;
 }
 
-a:active { /* selected link */
+a:active {
+  /* selected link */
   color: #994c30;
 }
 
 .skills.and.tools {
-    color: #F5B91D
+  color: #F5B91D
 }
 
 .container {
   max-width: 1200px;
 }
 
-
-
-
 /* Buttons */
-
-
-
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 
 .button:active {
   color: #EFEFEF;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
 
 .button.contact {
@@ -134,36 +141,38 @@ a:active { /* selected link */
   border-bottom: 2px solid #994c30;
   transition: 0.2s opacity;
 }
+
 .button:hover {
   opacity: 0.8;
 }
 
-
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #F5B91D;
-  color: #FFFFFF !important; /* needed to override the default link color */
+  color: #FFFFFF !important;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #F5B91D; /* width of the border, type, color */
+  border-bottom: 2px solid #F5B91D;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
-
 }
 
-
-
-
-
 /* Animation and Transition */
-
-
-
-
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #f76414;}
-  100% {fill: #f76414}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #f76414;
+  }
+
+  100% {
+    fill: #f76414
+  }
 }
 
 .sun {
@@ -171,8 +180,13 @@ a:active { /* selected link */
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-front {
@@ -180,30 +194,27 @@ a:active { /* selected link */
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-back {
   animation: 25s cloud-move-reverse infinite alternate linear;
 }
 
-
-
-
-
 /* Layout styling */
-
-
-
-
-
 .container {
   padding: 0 15px;
 }
 
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
 }
 
 #hero {
@@ -218,35 +229,80 @@ a:active { /* selected link */
   margin: 0;
   padding: 0.67em 0;
 }
+
 #hero h1 {
-  text-align: center; /* Centers text */
+  text-align: center;
+  /* Centers text */
 }
 
 .social-icons {
-  text-align:center;
+  text-align: center;
 }
+
 .social-icons img {
   height: 40px;
   width: 40px;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+position: absolute;
+right: 0;
+top: 2px;
+font-size: 20px;
+padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
-}
+  }
 
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
- }
- .col-md-6 {
-   width: 50%;
- }
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+  display: none;
+  }
+
+  nav > ul {
+  margin: 1em 0;
+  }
+
 }
 
 /* ==============================
@@ -256,20 +312,23 @@ Large devices (1024px or larger)
   .col-lg-7 {
     width: 60%;
   }
+
   .col-lg-5 {
     width: 40%;
   }
+
   .container {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
   }
 }
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
+@media only screen and (min-width: 1440px) {}
+
 .container {
   max-width: 1000px;
   margin-left: auto;
